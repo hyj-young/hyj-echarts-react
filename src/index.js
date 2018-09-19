@@ -67,7 +67,10 @@ class chart extends React.Component {
     }
   }
   render(){
-    return (<div ref={(echartsElement) => { this.echartsElement = echartsElement; }} style={{width: '100%', height: '300px'}}></div>)
+    return (<div 
+      ref={(echartsElement) => { this.echartsElement = echartsElement; }} 
+      style={{width: '100%', height: '300px'}}
+      className={this.props.className || ''}></div>)
   }
 }
 

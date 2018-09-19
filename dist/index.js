@@ -123,9 +123,12 @@ var chart = function (_React$Component) {
     value: function render() {
       var _this4 = this;
 
-      return _react2.default.createElement('div', { ref: function ref(echartsElement) {
+      return _react2.default.createElement('div', {
+        ref: function ref(echartsElement) {
           _this4.echartsElement = echartsElement;
-        }, style: { width: '100%', height: '300px' } });
+        },
+        style: { width: '100%', height: '300px' },
+        className: this.props.className || '' });
     }
   }]);
 

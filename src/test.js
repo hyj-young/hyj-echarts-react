@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Chart from './index'
+import './test.less'
 
 const options = {
 	option: {
@@ -41,14 +42,15 @@ const options = {
 		}
 		]
 	},
-    events: [
+  events: [
       {
         name: 'click',
         func: (params) => {
           console.log(params)
         }
       }
-    ]
+  ],
+  className: 'shit'
   }
 
 ReactDOM.render(<div>
